@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harper's Café</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="./IMG/Logo cafeteria 1.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 35 35" fill="none">
+                    <path
+                        d="M7.11424 29.1684H24.8999V19.2085C24.8999 18.3642 25.1502 17.5389 25.6192 16.837C26.0883 16.135 26.7549 15.5879 27.5349 15.2648C28.3149 14.9418 29.1731 14.8572 30.0011 15.0219C30.8292 15.1866 31.5897 15.5932 32.1867 16.1901C32.7837 16.7871 33.1902 17.5477 33.3549 18.3757C33.5196 19.2037 33.4351 20.062 33.112 20.842C32.7889 21.6219 32.2418 22.2886 31.5399 22.7576C30.8379 23.2267 30.0126 23.477 29.1684 23.477H28.457M0 33.4369H34.1484M21.3427 14.9399H3.55712V15.2956L3.64676 15.4379C6.37665 19.7602 7.82561 24.7676 7.82567 29.8798M7.82567 0V1.42285C7.82567 3.87571 8.80006 6.2281 10.5345 7.96254C12.2689 9.69697 14.6213 10.6714 17.0742 10.6714M20.6313 11.3828V6.40282H17.0742C15.7534 6.40282 14.4867 5.87814 13.5528 4.94422C12.6189 4.01029 12.0942 2.74362 12.0942 1.42285V0"
+                        stroke="white" stroke-width="2.56113" />
+                </svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="38" viewBox="0 0 38 30" fill="none">
+                    <path
+                        d="M19.3628 7.26855V20.7856M19.3628 7.26855C19.3628 6.13646 18.913 5.05074 18.1125 4.25023C17.312 3.44972 16.2263 3 15.0942 3H5.13427V4.54379C5.13432 11.0833 4.41863 17.6032 3 23.987V24.3427H15.0942C16.2263 24.3427 17.312 24.7925 18.1125 25.593C18.913 26.3935 19.3628 27.4792 19.3628 28.6113M19.3628 7.26855C19.3628 6.13646 19.8125 5.05074 20.613 4.25023C21.4135 3.44972 22.4992 3 23.6313 3H33.5912V4.54379C33.5912 11.0832 34.3069 17.6041 35.7255 23.987V24.3427H23.6313C22.4992 24.3427 21.4135 24.7925 20.613 25.593C19.8125 26.3935 19.3628 27.4792 19.3628 28.6113M19.3628 28.6113V29.3227"
+                        stroke="white" stroke-width="4.26855" />
+                </svg></a>
+            <a href="#"><img src="IMG/Logo cafeteria.png" alt="logo" width="70px"></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 34 34" fill="none">
+                    <path
+                        d="M17.2956 32.5912C25.7432 32.5912 32.5912 25.7432 32.5912 17.2956C32.5912 8.84808 25.7432 2 17.2956 2C8.84808 2 2 8.84808 2 17.2956C2 25.7432 8.84808 32.5912 17.2956 32.5912Z"
+                        stroke="white" stroke-width="2.56113" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M17.8156 17.2956C18.2401 17.2956 18.6473 17.4643 18.9475 17.7645C19.2477 18.0647 19.4163 18.4718 19.4163 18.8964C19.4163 19.3209 19.2477 19.728 18.9475 20.0282C18.6473 20.3284 18.2401 20.4971 17.8156 20.4971H16.7755C16.351 20.4971 15.9438 20.3284 15.6436 20.0282C15.3435 19.728 15.1748 19.3209 15.1748 18.8964C15.1748 18.4718 15.3435 18.0647 15.6436 17.7645C15.9438 17.4643 16.351 17.2956 16.7755 17.2956H17.8156ZM17.8156 17.2956C18.2401 17.2956 18.6473 17.127 18.9475 16.8268C19.2477 16.5266 19.4163 16.1195 19.4163 15.6949C19.4163 15.2704 19.2477 14.8633 18.9475 14.5631C18.6473 14.2629 18.2401 14.0942 17.8156 14.0942H16.7762C16.3517 14.0942 15.9445 14.2629 15.6444 14.5631C15.3442 14.8633 15.1755 15.2704 15.1755 15.6949C15.1755 16.1195 15.3442 16.5266 15.6444 16.8268C15.9445 17.127 16.3517 17.2956 16.7762 17.2956"
+                        stroke="white" stroke-width="1.70742" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M17.2955 24.4096C21.2246 24.4096 24.4098 21.2245 24.4098 17.2954C24.4098 13.3663 21.2246 10.1812 17.2955 10.1812C13.3664 10.1812 10.1813 13.3663 10.1813 17.2954C10.1813 21.2245 13.3664 24.4096 17.2955 24.4096Z"
+                        stroke="white" stroke-width="1.70742" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" viewBox="0 0 34 36" fill="none">
+                    <path
+                        d="M4.8457 35.4341V26.1856C4.8457 25.4309 4.54588 24.707 4.01221 24.1734C3.47854 23.6397 2.75473 23.3399 2 23.3399V11.9571C2 11.9571 4.13427 10.5342 7.69139 10.5342C8.772 10.5325 9.84838 10.6693 10.8942 10.9412M14.8071 35.4341V27.6084H9.82567V27.2527L9.92811 27.0393C12.2027 22.2621 13.3829 17.0376 13.3828 11.7465V11.2784C14.7499 10.7778 16.1955 10.5258 17.6513 10.5342C19.484 10.5342 20.9395 10.9127 21.9199 11.2784V11.7465C21.9199 12.8896 21.9749 14.0321 22.0849 15.1699M29.3898 35.4341V30.5594C29.3898 28.9288 30.5053 27.6084 31.8798 27.6084V18.4126C31.8798 18.4126 30.013 16.9371 26.8998 16.9371C23.7881 16.9371 21.9199 18.4126 21.9199 18.4126V27.6084C23.2958 27.6084 24.4099 28.9303 24.4099 30.5594V35.4341M7.47797 7.68855C7.47797 7.68855 5.20141 6.2657 5.20141 4.48714C5.20141 4.16052 5.26574 3.83711 5.39073 3.53535C5.51572 3.2336 5.69892 2.95942 5.92988 2.72847C6.16083 2.49751 6.43501 2.31431 6.73676 2.18932C7.03851 2.06433 7.36193 2 7.68855 2C8.01516 2 8.33858 2.06433 8.64034 2.18932C8.94209 2.31431 9.21627 2.49751 9.44722 2.72847C9.67817 2.95942 9.86137 3.2336 9.98636 3.53535C10.1114 3.83711 10.1757 4.16052 10.1757 4.48714C10.1757 6.2657 7.90482 7.68855 7.90482 7.68855H7.47797ZM17.4379 7.68855C17.4379 7.68855 15.1613 6.2657 15.1613 4.48714C15.1613 3.82751 15.4234 3.1949 15.8898 2.72847C16.3562 2.26204 16.9889 2 17.6485 2C18.3081 2 18.9407 2.26204 19.4072 2.72847C19.8736 3.1949 20.1356 3.82751 20.1356 4.48714C20.1356 6.2657 17.8648 7.68855 17.8648 7.68855H17.4379ZM26.7191 14.0914C26.7191 14.0914 24.7656 12.8464 24.7656 11.2898C24.7656 10.0875 25.7217 9.1114 26.9027 9.1114C28.0837 9.1114 29.0341 10.0875 29.0341 11.2898C29.0341 12.8464 27.0848 14.0914 27.0848 14.0914H26.7191Z"
+                        stroke="white" stroke-width="2.56113" />
+                </svg></a>
+        </nav>
+        <h1>
+            Harper's Café
+        </h1>
+        <p>
+            Tu Destino Para Una Experiencia <br> De Café Inolvidable
+        </p>
+        <a href="#" class="contact-button">Contactar Aquí</a>
+    </header>
+    <main>
+        <section class="about-us-section">
+            <h2>
+                SOBRE NOSOTROS
+            </h2>
+            <article>
+                <div class="info-container">
+                    <p><span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                fill="none">
+                                <path
+                                    d="M9 1.5C13.1423 1.5 16.5 4.85775 16.5 9C16.5 13.1423 13.1423 16.5 9 16.5C4.85775 16.5 1.5 13.1423 1.5 9C1.5 4.85775 4.85775 1.5 9 1.5ZM9 3C7.4087 3 5.88258 3.63214 4.75736 4.75736C3.63214 5.88258 3 7.4087 3 9C3 10.5913 3.63214 12.1174 4.75736 13.2426C5.88258 14.3679 7.4087 15 9 15C10.5913 15 12.1174 14.3679 13.2426 13.2426C14.3679 12.1174 15 10.5913 15 9C15 7.4087 14.3679 5.88258 13.2426 4.75736C12.1174 3.63214 10.5913 3 9 3ZM9 4.5C10.1935 4.5 11.3381 4.97411 12.182 5.81802C13.0259 6.66193 13.5 7.80653 13.5 9C13.5 10.1935 13.0259 11.3381 12.182 12.182C11.3381 13.0259 10.1935 13.5 9 13.5C7.80653 13.5 6.66193 13.0259 5.81802 12.182C4.97411 11.3381 4.5 10.1935 4.5 9C4.5 7.80653 4.97411 6.66193 5.81802 5.81802C6.66193 4.97411 7.80653 4.5 9 4.5ZM9 5.8125C8.63977 5.81261 8.2872 5.9165 7.98446 6.11172C7.68172 6.30694 7.44162 6.58524 7.29288 6.91333C7.14415 7.24142 7.09307 7.6054 7.14576 7.96176C7.19845 8.31811 7.35268 8.65174 7.59 8.92275C7.16625 9.2655 6.9 9.76125 6.9 10.3125C6.9 11.3475 7.8405 12.1875 9 12.1875C10.1595 12.1875 11.1 11.3475 11.1 10.3125C11.1 9.76125 10.8337 9.2655 10.41 8.9235C10.6476 8.65251 10.802 8.31881 10.8548 7.96233C10.9076 7.60586 10.8566 7.24171 10.7078 6.91348C10.5591 6.58525 10.3189 6.30684 10.016 6.11159C9.71311 5.91633 9.36037 5.81249 9 5.8125ZM9 9.5625C9.5655 9.5625 9.975 9.9285 9.975 10.3125C9.975 10.6965 9.5655 11.0625 9 11.0625C8.4345 11.0625 8.025 10.6965 8.025 10.3125C8.025 9.9285 8.43525 9.5625 9 9.5625ZM9 6.9375C9.19891 6.9375 9.38968 7.01652 9.53033 7.15717C9.67098 7.29782 9.75 7.48859 9.75 7.6875C9.75 7.88641 9.67098 8.07718 9.53033 8.21783C9.38968 8.35848 9.19891 8.4375 9 8.4375C8.80109 8.4375 8.61032 8.35848 8.46967 8.21783C8.32902 8.07718 8.25 7.88641 8.25 7.6875C8.25 7.48859 8.32902 7.29782 8.46967 7.15717C8.61032 7.01652 8.80109 6.9375 9 6.9375Z"
+                                    fill="white" />
+                            </svg></span>Nuestra Misión: <br>
+                        Ser un refugio cultural vibrante en Escazú, donde la comunidad se reúne para disfrutar de
+                        experiencias únicas que combinan café de especialidad, deliciosa comida, un ambiente acogedor y
+                        una variedad de actividades recreativas.</p>
+                </div>
+                <div class="info-container">
+                    <p><span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
+                                fill="none">
+                                <path
+                                    d="M1 10.1679C1.69176 10.703 2.73106 11.0155 3.91705 11.0013C5.10304 11.0155 6.14235 10.703 6.83411 10.1679C7.52586 9.63281 8.56517 9.32027 9.75116 9.33444C10.9371 9.32027 11.9765 9.63281 12.6682 10.1679M5.16722 1C4.90344 1.18933 4.68972 1.44003 4.54451 1.73045C4.3993 2.02087 4.32697 2.34226 4.33377 2.66689C4.32697 2.99151 4.3993 3.31291 4.54451 3.60332C4.68972 3.89374 4.90344 4.14444 5.16722 4.33377M8.50099 1C8.23721 1.18933 8.02349 1.44003 7.87828 1.73045C7.73308 2.02087 7.66075 2.34226 7.66755 2.66689C7.66075 2.99151 7.73308 3.31291 7.87828 3.60332C8.02349 3.89374 8.23721 4.14444 8.50099 4.33377"
+                                    stroke="white" stroke-width="1.66689" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M1 6.83398H12.6682V11.0012C12.6682 12.3275 12.1414 13.5994 11.2036 14.5372C10.2657 15.475 8.99381 16.0019 7.66755 16.0019H6.00066C4.6744 16.0019 3.40247 15.475 2.46466 14.5372C1.52685 13.5994 1 12.3275 1 11.0012V6.83398Z"
+                                    stroke="white" stroke-width="1.66689" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M12.4566 12.4397C12.8288 12.6105 13.2373 12.6873 13.6462 12.6634C14.055 12.6394 14.4517 12.5153 14.8014 12.3021C15.1511 12.0889 15.4431 11.7931 15.6516 11.4406C15.8602 11.0881 15.979 10.6898 15.9975 10.2806C16.0161 9.87149 15.9338 9.46406 15.7581 9.09414C15.5823 8.72423 15.3183 8.40316 14.9894 8.15916C14.6604 7.91516 14.2766 7.75569 13.8716 7.69479C13.4666 7.63389 13.0528 7.67341 12.6666 7.80988"
+                                    stroke="white" stroke-width="1.66689" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></span>Nuestra visión: <br>
+                        Convertirnos en el referente de una experiencia inolvidable de Escazú, reconocido por nuestro
+                        compromiso con la calidad, la innovación, el servicio al cliente y la creación de un espacio de
+                        entretenimiento para todas las edades y variedad de personas.</p>
+                </div>
+                <div class="info-container2">
+                    <p><span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                fill="none">
+                                <path
+                                    d="M2.25 13.875V3.75C2.25 3.15326 2.48705 2.58097 2.90901 2.15901C3.33097 1.73705 3.90326 1.5 4.5 1.5H15C15.1989 1.5 15.3897 1.57902 15.5303 1.71967C15.671 1.86032 15.75 2.05109 15.75 2.25V15.75C15.75 15.9489 15.671 16.1397 15.5303 16.2803C15.3897 16.421 15.1989 16.5 15 16.5H4.875C4.17881 16.5 3.51113 16.2234 3.01884 15.7312C2.52656 15.2389 2.25 14.5712 2.25 13.875ZM14.25 15V12.75H4.875C4.57663 12.75 4.29048 12.8685 4.0795 13.0795C3.86853 13.2905 3.75 13.5766 3.75 13.875C3.75 14.1734 3.86853 14.4595 4.0795 14.6705C4.29048 14.8815 4.57663 15 4.875 15H14.25ZM3.75 11.5028C4.10152 11.3358 4.48586 11.2495 4.875 11.25H14.25V3H4.5C4.30109 3 4.11032 3.07902 3.96967 3.21967C3.82902 3.36032 3.75 3.55109 3.75 3.75V11.5028Z"
+                                    fill="white" />
+                            </svg></span>La Cafetería nació en el corazón de Escazú, transformando una antigua fábrica
+                        industrial en un oasis cultural único. Conservando la esencia histórica del edificio, sus
+                        paredes ahora albergan un espacio donde confluyen el buen gusto, la creatividad y el espíritu
+                        comunitario.</p>
+                </div>
+            </article>
+        </section>
+        <section class="group-team-section">
+            <h2>
+                Nuestro Equipo de administración
+            </h2>
+            <p>
+                ¿Quieres Postularte? <span>CLICK AQUÍ</span>
+            </p>
+            <article class="members">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="270" viewBox="0 0 41 80" fill="none">
+                    <path
+                        d="M33.8649 79.9993C33.0113 80.0022 32.1679 79.8138 31.3967 79.448C30.6254 79.0822 29.946 78.5481 29.4082 77.8852L1.81091 43.6029C0.970528 42.5805 0.511108 41.2981 0.511108 39.9747C0.511108 38.6512 0.970528 37.3688 1.81091 36.3465L30.3795 2.0641C31.3494 0.897259 32.743 0.163477 34.2539 0.0241776C35.7647 -0.115121 37.2691 0.351472 38.4359 1.32131C39.6027 2.29115 40.3365 3.68479 40.4758 5.19565C40.6151 6.70651 40.1485 8.21083 39.1787 9.37767L13.6383 40.0032L38.3216 70.6288C39.0203 71.4675 39.4641 72.4888 39.6006 73.5718C39.737 74.6548 39.5604 75.7543 39.0915 76.7401C38.6227 77.7259 37.8813 78.5567 36.955 79.1343C36.0288 79.7119 34.9564 80.0121 33.8649 79.9993Z"
+                        fill="#F0E6D6" />
+                </svg>
+                <div class="card">
+                    <img src="./IMG/member 1.jpg" alt="member-image">
+                    <div class="texts-members">
+                        <p>Valentina López</p>
+                        <h3>Gerente de Zonas</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./IMG/member 1.jpg" alt="member-image">
+                    <div class="texts-members">
+                        <p>Valentina López</p>
+                        <h3>Gerente de Zonas</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./IMG/member 1.jpg" alt="member-image">
+                    <div class="texts-members">
+                        <p>Valentina López</p>
+                        <h3>Gerente de Zonas</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./IMG/member 1.jpg" alt="member-image">
+                    <div class="texts-members">
+                        <p>Valentina López</p>
+                        <h3>Gerente de Zonas</h3>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="270" viewBox="0 0 41 80" fill="none">
+                    <path
+                        d="M7.13509 0.000446319C7.98869 -0.00245285 8.83209 0.18594 9.60333 0.551784C10.3746 0.917621 11.054 1.45163 11.5918 2.11454L39.1891 36.3969C40.0295 37.4193 40.4889 38.7017 40.4889 40.0251C40.4889 41.3485 40.0295 42.6309 39.1891 43.6533L10.6205 77.9357C9.65062 79.1025 8.25698 79.8363 6.74612 79.9756C5.23526 80.1149 3.73095 79.6483 2.56411 78.6784C1.39727 77.7086 0.663492 76.315 0.524195 74.8041C0.384893 73.2932 0.851484 71.7889 1.82132 70.6221L27.3617 39.9965L2.67839 9.37096C1.9797 8.53227 1.53587 7.511 1.39943 6.42797C1.26299 5.34494 1.43964 4.24548 1.90848 3.2597C2.37733 2.27392 3.11874 1.44309 4.045 0.865482C4.97125 0.287884 6.04358 -0.0123024 7.13509 0.000446319Z"
+                        fill="#F0E6D6" />
+                </svg>
+            </article>
+        </section>
+        <section class="cafeteria-section">
+            <article class="img-container-cafeteria">
+                <img src="./IMG/coffe 1.png" alt="coffe">
+            </article>
+            <article class="text-container-cafeteria">
+                <p>El café negro, una bebida sin aditivos, cautiva con su aroma intenso y sabor robusto. Cada sorbo
+                    revela notas amargas y matices complejos, desde chocolate hasta frutas.</p>
+            </article>
+        </section>
+        <section class="drinks-section">
+            <h2>
+                NUESTRA COLECCIÓN DE BEBIDAS
+            </h2>
+            <div class="containerDrinks">
+                <div class="cardDrink">
+                    <img src="./IMG/coctel 1.png" alt="drink1">
+                    <h4 id="textDrink1">VER MÁS DETALLES</h4>
+                </div>
+                <div class="cardDrink">
+                    <img src="./IMG/coctel 2.png" alt="drink2">
+                    <h4 id="textDrink2">VER MÁS DETALLES</h4>
+                </div>
+                <div class="cardDrink">
+                    <img src="./IMG/coctel 3.png" alt="drink3">
+                    <h4 id="textDrink3">VER MÁS DETALLES</h4>
+                </div>
+                <div class="cardDrink">
+                    <img src="./IMG/coctel 4.png" alt="drink4">
+                    <h4 id="textDrink4">VER MÁS DETALLES</h4>
+                </div>
+                <div class="cardDrink">
+                    <img src="./IMG/coctel 5.png" alt="drink5">
+                    <h4 id="textDrink5">VER MÁS DETALLES</h4>
+                </div>
+                <div class="cardDrink">
+                    <img src="./IMG/coctel 6.png" alt="drink6">
+                    <h4 id="textDrink6">VER MÁS DETALLES</h4>
+                </div>
+            </div>
+        </section>
+        <section class="food-section">
+            <h2>
+                "NO SOLO COMIDA, ¡UNA EXPERIENCIA!"
+            </h2>
+            <article class="food-container">
+                <p>
+                    Ven A Conocer Nuestro Top Triangulo De Las Tres Delicias Del Mes
+                </p>
+                <div class="foodCard">
+                    <img src="IMG/food 1.jpg" alt="food">
+                    <p>Abrazo De Fuego</p>
+                </div>
+                <div class="foodCard">
+                    <img src="IMG/food 2.jpg" alt="food">
+                    <p>Perro Celestial</p>
+                </div>
+                <div class="foodCard">
+                    <img src="IMG/food 3.jpg" alt="food">
+                    <p>Sinfonía Del Paraiso</p>
+                </div>
+            </article>
+        </section>
+        <div class="imageLibrary"></div>
+        <section class="library-section">
+            <h2>
+                Bienvenido(a) a la zona de Biblioteca
+            </h2>
+            <p id="parrafinBiblioteca">
+                Explora nuestra colección de libros y zonas para pasar un momento Único y relajante
+            </p>
+            <article class="zones-section">
+                <h2>
+                    NUESTRAS ZONAS
+                </h2>
+                <div class="card-zones">
+                    <div>
+                        <img src="IMG/zona de sillones y sillas img 1.png"
+                            alt="imagen de dos chicos jovenes sentados en una de las mesas de zona de relajación">
+                    </div>
+                    <div class="texts-zone">
+                        <h3>
+                            ZONA DE RELAJACIÓN
+                        </h3>
+                        <p>
+                            Sillones Individuales Y Para Grupos
+                        </p>
+                    </div>
+                </div>
+                <div class="card-zones">
+                    <div>
+                        <img src="IMG/zona de sillones y sillas img 2.png"
+                            alt="imagen de dos chicos jovenes sentados en una de las mesas de zona de relajación">
+                    </div>
+                    <div class="texts-zone">
+                        <h3>
+                            ZONA DE BIBLIOTECA PRINCIPAL
+                        </h3>
+                        <p>
+                            Grandes Pilas De Libros Con Escalera
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <div class="books-section">
+                <div class="texts-books">
+                    <h3>
+                        RECOMENDACIONES <br> PARA LEER
+                    </h3>
+                    <a href="#">Ver más</a>
+                </div>
+                <div class="books-container">
+                    <div class="card-book">
+                        <div class="image-book">
+                            <img src="IMG/book image 1.png"
+                                alt="Imagen de la caratula del libro de Matt Ridley con el titular How innovation Works">
+                        </div>
+                        <div class="texts-book">
+                            <h3>
+                                How innovation works
+                            </h3>
+                            <p>
+                                Matt Ridley
+                            </p>
+                            <button>Desarrollo personal</button>
+                        </div>
+                    </div>
+                    <div class="card-book">
+                        <div class="image-book">
+                            <img src="IMG/book image 2.png"
+                                alt="Imagen de la caratula del libro de Morgan Housel con el titular the psychology of money">
+                        </div>
+                        <div class="texts-book">
+                            <h3>
+                                The psychology of money
+                            </h3>
+                            <p>
+                                Matt Ridley
+                            </p>
+                            <button id="button2">Finanzas</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ask-for-book">
+                <h2>
+                    ¡PIDE TU LIBRO!
+                </h2>
+                <p>
+                    Pide Un Libro Que No Esta En Nuestra <br>Colección
+                </p>
+                <div class="input-container">
+                    <label for="titleBook">Titulo</label>
+                    <input type="text" name="titleBook" id="titleBook" placeholder="Escriba aquí el titulo del libro">
+                </div>
+                <div class="input-container">
+                    <label for="autor">Autor</label>
+                    <input type="text" name="autor" id="autor" placeholder="Escriba aquí el autor del libro">
+                </div>
+                <a href="#">Enviar petición</a>
+            </div>
+        </section>
+        <div class="imageLibrary"></div>
+        <section class="pool-section">
+            <h2>
+                MESAS DE BILLAR DISPONIBLES
+            </h2>
+            <article class="texts-pool">
+                <p>¡Reserva tu mesa de billar ahora mismo! Haz click en alguna de las esferas para consultar espacios.
+                </p>
+                <p>Disfruta de una tarde o noche de diversión con amigos o familiares jugando billar en nuestras mesas
+                    profesionales.</p>
+            </article>
+            <article class="balls-pool">
+                <div class="card-Pool">
+                    <img src="IMG/bola de billar 1.png" alt="bola de billar de color amarrila con el número 1 de mesa">
+                    <p>
+                        Mesa 1
+                    </p>
+                    <h3>
+                        Zona A
+                    </h3>
+                </div>
+                <div class="card-Pool">
+                    <img src="IMG/bola de billar 2.png" alt="bola de billar de color azul con el número 2 de mesa">
+                    <p>
+                        Mesa 2
+                    </p>
+                    <h3>
+                        Zona A
+                    </h3>
+                </div>
+                <div class="card-Pool">
+                    <img src="IMG/bola de billar 3.png" alt="bola de billar de color roja con el número 3 de mesa">
+                    <p>
+                        Mesa 3
+                    </p>
+                    <h3>
+                        Zona A
+                    </h3>
+                </div>
+                <div class="card-Pool">
+                    <img src="IMG/bola de billar 4.png" alt="bola de billar de color morada con el número 4 de mesa">
+                    <p>
+                        Mesa 1
+                    </p>
+                    <h3>
+                        Zona B
+                    </h3>
+                </div>
+                <div class="card-Pool">
+                    <img src="IMG/bola de billar 5.png" alt="bola de billar de color marron con el número 5 de mesa">
+                    <p>
+                        Mesa 2
+                    </p>
+                    <h3>
+                        Zona B
+                    </h3>
+                </div>
+            </article>
+        </section>
+        <section class="other-zones-section">
+            <h2>
+                CONOCE UN POCO DE NUESTRAS <br> OTRAS ZONAS
+            </h2>
+            <article class="post">
+                <div class="image-container-post">
+                    <img src="IMG/post 1.jpg"
+                        alt="imagen de nuestra zona de mesas tradicionales con varios sitios para sentarse y estar como se guste">
+                </div>
+                <div class="text-container-post">
+                    <p>
+                        Zona De Mesas Tradicionales
+                    </p>
+                </div>
+            </article>
+            <article class="post">
+                <div class="image-container-post">
+                    <img src="IMG/post 2.jpg" alt="imagen de nuestro personal recogiendo la cosecha de nuestra huerta">
+                </div>
+                <div class="text-container-post">
+                    <p>
+                        Zona De Huerta
+                    </p>
+                </div>
+            </article>
+            <article class="post">
+                <div class="image-container-post">
+                    <img src="IMG/post 3.jpg" alt="imagen de nuestra zona de jardin con terraza y mesas">
+                </div>
+                <div class="text-container-post">
+                    <p>
+                        Zona De Jardín Terraza
+                    </p>
+                </div>
+            </article>
+            <article class="post">
+                <div class="image-container-post">
+                    <img src="IMG/post 4.jpg"
+                        alt="imagen de referencia de nuestra zona de mesas con sillones color caquis">
+                </div>
+                <div class="text-container-post">
+                    <p>
+                        Zona De Mesas
+                    </p>
+                </div>
+            </article>
+            <article class="post">
+                <div class="image-container-post">
+                    <img src="IMG/post 5.jpg"
+                        alt="imagen de nuestra zona de huerta con todos los vegetales que cultivamos">
+                </div>
+                <div class="text-container-post">
+                    <p>
+                        Zona De Huerta
+                    </p>
+                </div>
+            </article>
+        </section>
+        <section class="location-section">
+            <h2>
+                MIRA DONDE ESTAMOS UBICADOS
+            </h2>
+            <img src="IMG/location img.jpg" alt="imagen de nuestra localización">
+        </section>
+        <section class="reviews-section">
+            <h2>
+                TESTIMONIOS DE NUESTROS <br> USUARIOS
+            </h2>
+            <article class="container-users">
+                <div class="card-user">
+                    <img src="IMG/user (1).jpg" alt="fotografia de uno de nuestros usuarios">
+                    <p>07/08/24</p>
+                    <h4>Craig</h4>
+                    <p>
+                        Increíble ambiente y personal amigable
+                    </p>
+                </div>
+                <div class="card-user">
+                    <img src="IMG/user (2).jpg" alt="fotografia de uno de nuestros usuarios">
+                    <p>07/06/24</p>
+                    <h4>Sophia</h4>
+                    <p>
+                        Ambiente fantástico y personal acogedor
+                    </p>
+                </div>
+                <div class="card-user">
+                    <img src="IMG/user (3).jpg" alt="fotografia de uno de nuestros usuarios">
+                    <p>27/10/24</p>
+                    <h4>Hector</h4>
+                    <p>
+                        Excelente ambiente y personal muy amable
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h2>
+            CONTACTANOS
+        </h2>
+        <p>
+            ¿Tienes alguna pregunta o <br> sugerencia? ¡Contáctanos!
+        </p>
+        <div class="formUsers">
+            <form action="#">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Escribe tu nombre aquí" required>
+                <label for="email">Email</label>
+                <input type="email" placeholder="Escribe tu email aquí" required>
+                <label for="mensaje">Mensaje</label>
+                <input type="text" placeholder="Escribe tu mensaje aquí" required>
+                <button type="submit" id="btnContact">Enviar Mensaje</button>    
+            </form>
+        </div>
+        <!-- AQUI TIENE QUE SER DE UN BUTTON DE TIPO SUBMIT E IR DENTRO DEL FORM -->
+        <!-- Figuras que tendran posición absoluta para el fondo -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="92" height="81" viewBox="0 0 92 81" fill="none" id="figure1">
+            <path opacity="0.55"
+                d="M1.55235 28.7476C0.351522 25.3348 0.0532827 21.6696 0.686571 18.1076C1.31986 14.5456 2.86317 11.2077 5.16673 8.41802C7.4703 5.6283 10.4559 3.48142 13.8338 2.18572C17.2117 0.890015 20.8671 0.489494 24.4454 1.02302C28.0237 1.55655 31.4034 3.006 34.2564 5.23073C37.1093 7.45546 39.3388 10.3799 40.7284 13.7203C42.1179 17.0606 42.6204 20.7035 42.1871 24.2953C41.7537 27.8871 40.3993 31.3059 38.2551 34.22C45.1135 34.3091 51.7882 36.4487 57.4203 40.3633C63.0525 44.2778 67.3842 49.7883 69.8582 56.1856C70.0953 56.8857 70.0527 57.6504 69.7392 58.3199C69.4258 58.9894 68.8658 59.5119 68.1762 59.7782C67.4866 60.0445 66.7208 60.034 66.0387 59.749C65.3567 59.4639 64.8112 58.9263 64.5161 58.2485C61.8323 51.3105 56.5526 45.69 49.7956 42.5782C43.0387 39.4664 35.3356 39.1078 28.3188 41.5784C21.302 44.049 15.5229 49.1546 12.2061 55.8134C8.88936 62.4721 8.29562 70.1606 10.5507 77.2496C10.7629 77.9672 10.6856 78.7393 10.3353 79.4006C9.98512 80.0618 9.38986 80.5596 8.67707 80.7873C7.96429 81.015 7.19067 80.9545 6.52196 80.6187C5.85326 80.2829 5.34264 79.6986 5.09951 78.991C3.01876 72.4546 2.9419 65.4451 4.87881 58.8646C6.81572 52.2842 10.6778 46.4341 15.9678 42.0673C12.6614 41.19 9.61961 39.5178 7.10715 37.1963C4.59469 34.8748 2.68776 31.9744 1.55235 28.7476ZM16.2796 7.37976C12.4611 8.72422 9.33316 11.5305 7.58379 15.1812C5.83441 18.832 5.60694 23.0281 6.95141 26.8466C8.29587 30.665 11.1021 33.793 14.7529 35.5424C18.4036 37.2917 22.5998 37.5192 26.4182 36.1747C30.2367 34.8303 33.3646 32.024 35.114 28.3733C36.8634 24.7225 37.0909 20.5264 35.7464 16.7079C34.4019 12.8895 31.5957 9.76151 27.9449 8.01213C24.2942 6.26276 20.098 6.03529 16.2796 7.37976ZM51.1877 11.2711C50.6574 11.4578 50.1494 11.6771 49.6636 11.9291C49.3292 12.1186 48.9601 12.2389 48.5783 12.2827C48.1965 12.3265 47.8097 12.2929 47.4411 12.184C47.0726 12.0751 46.7297 11.8931 46.433 11.6488C46.1363 11.4045 45.8918 11.1029 45.7142 10.7621C45.5366 10.4212 45.4294 10.0481 45.3991 9.66498C45.3688 9.28184 45.416 8.89652 45.5378 8.53201C45.6597 8.16749 45.8537 7.83126 46.1083 7.54336C46.3629 7.25546 46.6729 7.02179 47.0198 6.85629C50.4174 5.07826 54.3098 4.48045 58.0844 5.15694C61.859 5.83343 65.3015 7.74581 67.8701 10.5931C70.4388 13.4404 71.9877 17.061 72.2732 20.8851C72.5588 24.7092 71.5646 28.5197 69.4473 31.7168C74.3574 32.1226 79.0453 33.9406 82.9452 36.9514C86.8451 39.9622 89.7905 44.0371 91.426 48.6847C91.6781 49.4006 91.6354 50.1874 91.3074 50.8719C90.9794 51.5564 90.3929 52.0826 89.6769 52.3347C88.961 52.5868 88.1742 52.5441 87.4897 52.2161C86.8052 51.8881 86.279 51.3016 86.0269 50.5857C84.6139 46.5684 81.9437 43.1136 78.4122 40.7337C74.8808 38.3537 70.6764 37.1755 66.4225 37.3736L64.2976 37.4745L62.1736 31.4419L63.3844 30.1701C65.1818 28.2917 66.2938 25.8625 66.5407 23.2745C66.7877 20.6865 66.1552 18.0908 64.7455 15.9065C63.3358 13.7221 61.2311 12.0766 58.7712 11.2356C56.3113 10.3945 53.6397 10.407 51.1877 11.2711Z"
+                fill="#F0E6D6" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="94" height="94" viewBox="0 0 94 94" fill="none" id="figure2">
+            <path opacity="0.55"
+                d="M35.2405 11.8034C36.9622 8.62144 39.4772 5.93858 42.5414 4.01516C45.6056 2.09173 49.115 0.993062 52.729 0.825766C56.343 0.65847 59.9389 1.42823 63.1677 3.06034C66.3965 4.69245 69.1485 7.1315 71.1568 10.1408C73.1651 13.15 74.3614 16.6274 74.6296 20.2353C74.8978 23.8432 74.2288 27.4592 72.6875 30.7323C71.1462 34.0054 68.785 36.8246 65.8331 38.9162C62.8811 41.0077 59.4385 42.3007 55.8395 42.6696C60.3802 47.8103 63.2785 54.1923 64.1616 60.9941C65.0446 67.796 63.8719 74.7065 60.7944 80.8362C60.4349 81.4822 59.8398 81.9642 59.1333 82.1817C58.4268 82.3992 57.6636 82.3353 57.0031 82.0033C56.3426 81.6713 55.836 81.0969 55.589 80.4002C55.3421 79.7034 55.3739 78.9382 55.6779 78.2644C59.0151 71.6159 59.6325 63.9292 57.3992 56.8333C55.1659 49.7374 50.2574 43.7899 43.714 40.2511C37.1706 36.7124 29.5063 35.8605 22.3455 37.876C15.1847 39.8914 9.09003 44.6159 5.35304 51.0482C4.96395 51.6874 4.34001 52.1487 3.6149 52.3334C2.88978 52.5181 2.12116 52.4115 1.47371 52.0364C0.82625 51.6613 0.351453 51.0475 0.151028 50.3266C-0.0493978 49.6057 0.0404905 48.8349 0.401439 48.1795C3.84614 42.2475 8.98737 37.4823 15.1633 34.4972C21.3393 31.5121 28.2674 30.4437 35.0557 31.4295C33.4848 28.3908 32.6804 25.0141 32.7126 21.5935C32.7448 18.1729 33.6127 14.812 35.2405 11.8034ZM60.9626 8.36107C57.4018 6.43533 53.2218 6.003 49.3421 7.1592C45.4625 8.3154 42.2011 10.9654 40.2754 14.5263C38.3496 18.0871 37.9173 22.2671 39.0735 26.1467C40.2297 30.0264 42.8797 33.2878 46.4406 35.2135C50.0014 37.1393 54.1814 37.5716 58.061 36.4154C61.9406 35.2592 65.2021 32.6092 67.1278 29.0483C69.0536 25.4875 69.4859 21.3075 68.3297 17.4278C67.1735 13.5482 64.5235 10.2868 60.9626 8.36107ZM81.5274 36.8358C81.0329 36.5683 80.5292 36.3393 80.0162 36.1486C79.6512 36.0283 79.3142 35.8356 79.0253 35.5821C78.7364 35.3287 78.5015 35.0196 78.3346 34.6734C78.1677 34.3272 78.0722 33.9509 78.0539 33.567C78.0356 33.1831 78.0948 32.7995 78.228 32.4389C78.3612 32.0784 78.5656 31.7484 78.8291 31.4686C79.0926 31.1888 79.4097 30.9649 79.7616 30.8104C80.1135 30.6558 80.4929 30.5737 80.8772 30.5689C81.2615 30.5642 81.6429 30.6369 81.9985 30.7827C85.5978 32.1054 88.6552 34.5875 90.6894 37.8382C92.7236 41.0889 93.6192 44.9237 93.2352 48.7392C92.8512 52.5546 91.2094 56.1341 88.5681 58.9142C85.9269 61.6944 82.4363 63.5173 78.6455 64.0963C81.643 68.0064 83.445 72.7004 83.8341 77.6119C84.2232 82.5234 83.1827 87.4426 80.8382 91.7759C80.4772 92.4436 79.8657 92.9404 79.1382 93.1572C78.4108 93.374 77.627 93.293 76.9594 92.9319C76.2917 92.5708 75.7949 91.9593 75.5781 91.2319C75.3613 90.5044 75.4423 89.7207 75.8034 89.053C77.8304 85.3079 78.5962 81.0091 77.9873 76.7943C77.3784 72.5796 75.4272 68.6734 72.423 65.655L70.9211 64.1486L73.9635 58.5231L75.719 58.5658C78.3178 58.6357 80.8644 57.8277 82.9475 56.2724C85.0306 54.717 86.5288 52.5049 87.2001 49.9934C87.8715 47.4818 87.6768 44.8173 86.6475 42.43C85.6183 40.0426 83.8145 38.0719 81.5274 36.8358Z"
+                fill="#F0E6D6" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="94" height="94" viewBox="0 0 94 94" fill="none" id="figure3">
+            <path opacity="0.55"
+                d="M35.2405 11.8346C36.9622 8.65269 39.4772 5.96983 42.5414 4.04641C45.6056 2.12298 49.115 1.02431 52.729 0.857016C56.343 0.68972 59.9389 1.45948 63.1677 3.09159C66.3965 4.7237 69.1485 7.16275 71.1568 10.172C73.1651 13.1813 74.3614 16.6586 74.6296 20.2665C74.8978 23.8744 74.2288 27.4904 72.6875 30.7636C71.1462 34.0367 68.785 36.8558 65.8331 38.9474C62.8811 41.039 59.4385 42.3319 55.8395 42.7008C60.3802 47.8416 63.2785 54.2235 64.1616 61.0254C65.0446 67.8272 63.8719 74.7377 60.7944 80.8675C60.4349 81.5134 59.8398 81.9955 59.1333 82.213C58.4268 82.4304 57.6636 82.3665 57.0031 82.0345C56.3426 81.7025 55.836 81.1282 55.589 80.4314C55.3421 79.7347 55.3739 78.9695 55.6779 78.2956C59.0151 71.6471 59.6325 63.9605 57.3992 56.8646C55.1659 49.7687 50.2574 43.8211 43.714 40.2824C37.1706 36.7436 29.5063 35.8917 22.3455 37.9072C15.1847 39.9227 9.09003 44.6472 5.35304 51.0795C4.96395 51.7186 4.34001 52.18 3.6149 52.3647C2.88978 52.5494 2.12116 52.4428 1.47371 52.0677C0.82625 51.6925 0.351453 51.0788 0.151028 50.3579C-0.0493978 49.6369 0.0404905 48.8662 0.401439 48.2107C3.84614 42.2788 8.98737 37.5136 15.1633 34.5285C21.3393 31.5433 28.2674 30.4749 35.0557 31.4608C33.4848 28.422 32.6804 25.0454 32.7126 21.6248C32.7448 18.2041 33.6127 14.8432 35.2405 11.8346ZM60.9626 8.39232C57.4018 6.46658 53.2218 6.03425 49.3421 7.19045C45.4625 8.34665 42.2011 10.9967 40.2754 14.5575C38.3496 18.1184 37.9173 22.2984 39.0735 26.178C40.2297 30.0576 42.8797 33.319 46.4406 35.2448C50.0014 37.1705 54.1814 37.6028 58.061 36.4466C61.9406 35.2904 65.2021 32.6404 67.1278 29.0796C69.0536 25.5187 69.4859 21.3387 68.3297 17.4591C67.1735 13.5795 64.5235 10.3181 60.9626 8.39232ZM81.5274 36.867C81.0329 36.5996 80.5292 36.3705 80.0162 36.1799C79.6512 36.0595 79.3142 35.8668 79.0253 35.6134C78.7364 35.3599 78.5015 35.0509 78.3346 34.7047C78.1677 34.3585 78.0722 33.9822 78.0539 33.5983C78.0356 33.2144 78.0948 32.8307 78.228 32.4702C78.3612 32.1097 78.5656 31.7797 78.8291 31.4999C79.0926 31.2201 79.4097 30.9962 79.7616 30.8416C80.1135 30.687 80.4929 30.6049 80.8772 30.6002C81.2615 30.5954 81.6429 30.6681 81.9985 30.8139C85.5978 32.1367 88.6552 34.6187 90.6894 37.8694C92.7236 41.1201 93.6192 44.955 93.2352 48.7704C92.8512 52.5859 91.2094 56.1653 88.5681 58.9455C85.9269 61.7256 82.4363 63.5486 78.6455 64.1275C81.643 68.0377 83.445 72.7317 83.8341 77.6432C84.2232 82.5547 83.1827 87.4738 80.8382 91.8072C80.4772 92.4748 79.8657 92.9717 79.1382 93.1885C78.4108 93.4053 77.627 93.3242 76.9594 92.9631C76.2917 92.6021 75.7949 91.9905 75.5781 91.2631C75.3613 90.5357 75.4423 89.7519 75.8034 89.0843C77.8304 85.3391 78.5962 81.0403 77.9873 76.8256C77.3784 72.6108 75.4272 68.7046 72.423 65.6863L70.9211 64.1799L73.9635 58.5543L75.719 58.597C78.3178 58.6669 80.8644 57.859 82.9475 56.3036C85.0306 54.7482 86.5288 52.5362 87.2001 50.0246C87.8715 47.5131 87.6768 44.8485 86.6475 42.4612C85.6183 40.0739 83.8145 38.1031 81.5274 36.867Z"
+                fill="#F0E6D6" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="93" height="81" viewBox="0 0 93 81" fill="none" id="figure4">
+            <path opacity="0.55"
+                d="M2.14048 28.3027C0.939656 24.89 0.641417 21.2247 1.27471 17.6627C1.90799 14.1007 3.4513 10.7629 5.75487 7.97319C8.05843 5.18348 11.044 3.0366 14.4219 1.74089C17.7998 0.445191 21.4553 0.0446695 25.0336 0.578196C28.6119 1.11172 31.9915 2.56118 34.8445 4.78591C37.6975 7.01063 39.9269 9.93508 41.3165 13.2754C42.7061 16.6158 43.2086 20.2587 42.7752 23.8505C42.3419 27.4423 40.9874 30.8611 38.8432 33.7751C45.7016 33.8643 52.3763 36.0038 58.0085 39.9184C63.6406 43.833 67.9724 49.3435 70.4463 55.7408C70.6834 56.4409 70.6408 57.2056 70.3274 57.8751C70.0139 58.5446 69.4539 59.067 68.7643 59.3333C68.0747 59.5996 67.3089 59.5892 66.6269 59.3041C65.9448 59.0191 65.3993 58.4815 65.1043 57.8037C62.4205 50.8657 57.1407 45.2452 50.3838 42.1334C43.6268 39.0216 35.9238 38.663 28.9069 41.1336C21.8901 43.6042 16.111 48.7098 12.7943 55.3685C9.4775 62.0273 8.88376 69.7158 11.1389 76.8048C11.351 77.5224 11.2737 78.2945 10.9235 78.9557C10.5733 79.617 9.97799 80.1148 9.26521 80.3425C8.55242 80.5702 7.77881 80.5096 7.1101 80.1739C6.44139 79.8381 5.93078 79.2538 5.68764 78.5462C3.6069 72.0098 3.53003 65.0002 5.46694 58.4198C7.40385 51.8394 11.2659 45.9893 16.5559 41.6224C13.2496 40.7451 10.2077 39.073 7.69528 36.7515C5.18283 34.43 3.27589 31.5296 2.14048 28.3027ZM16.8677 6.93493C13.0493 8.2794 9.92129 11.0857 8.17192 14.7364C6.42255 18.3871 6.19508 22.5833 7.53954 26.4017C8.88401 30.2202 11.6903 33.3482 15.341 35.0975C18.9918 36.8469 23.1879 37.0744 27.0064 35.7299C30.8248 34.3855 33.9528 31.5792 35.7022 27.9284C37.4515 24.2777 37.679 20.0816 36.3345 16.2631C34.9901 12.4447 32.1838 9.31668 28.5331 7.56731C24.8823 5.81794 20.6862 5.59046 16.8677 6.93493ZM51.7758 10.8263C51.2455 11.013 50.7375 11.2323 50.2517 11.4843C49.9174 11.6738 49.5483 11.7941 49.1664 11.8379C48.7846 11.8817 48.3979 11.8481 48.0293 11.7392C47.6607 11.6303 47.3178 11.4482 47.0211 11.2039C46.7244 10.9596 46.48 10.6581 46.3023 10.3172C46.1247 9.97642 46.0175 9.6033 45.9872 9.22016C45.9569 8.83702 46.0041 8.45169 46.126 8.08718C46.2478 7.72267 46.4418 7.38643 46.6965 7.09853C46.9511 6.81063 47.2611 6.57697 47.6079 6.41147C51.0056 4.63344 54.8979 4.03563 58.6725 4.71212C62.4471 5.3886 65.8896 7.30099 68.4583 10.1483C71.0269 12.9956 72.5759 16.6162 72.8614 20.4403C73.1469 24.2644 72.1527 28.0748 70.0354 31.272C74.9455 31.6778 79.6334 33.4958 83.5333 36.5065C87.4332 39.5173 90.3786 43.5923 92.0141 48.2398C92.2662 48.9558 92.2235 49.7426 91.8955 50.4271C91.5675 51.1116 90.981 51.6378 90.2651 51.8899C89.5491 52.142 88.7623 52.0993 88.0778 51.7713C87.3933 51.4433 86.8671 50.8568 86.615 50.1408C85.202 46.1236 82.5318 42.6688 79.0004 40.2888C75.469 37.9089 71.2645 36.7306 67.0106 36.9288L64.8858 37.0297L62.7617 30.9971L63.9726 29.7252C65.77 27.8469 66.8819 25.4177 67.1289 22.8297C67.3758 20.2417 66.7434 17.646 65.3337 15.4617C63.924 13.2773 61.8193 11.6318 59.3593 10.7907C56.8994 9.94969 54.2278 9.96221 51.7758 10.8263Z"
+                fill="#F0E6D6" />
+        </svg>
+    </footer>
+    <div class="finalFooter">
+        </a>
+        <img src="./IMG/LogoEnterprise.png" alt="logoDeHarper's">
+        <p>2024 Harper’s Café. Todos los derechos resevados</p>
+        <a href="https://www.facebook.com/tiven.hxh/" target="_blank"><img src="/IMG/Logo facebook.png" alt="socialMediaLogo"></a>
+        <a href="https://www.instagram.com/tiven.hxh/" target="_blank"><img src="/IMG/Logo instagram.png" alt="socialMediaLogo"></a>
+        <a href="https://www.youtube.com/@Punjiga182" target="_blank"><img src="/IMG/Logo youtube.png" alt="socialMediaLogo"></a>
+        <a href="https://pin.it/3ppPN7RmS" target="_blank"><img src="/IMG/Logo pinterest.png" alt="socialMediaLogo">
+    </div>
+</body>
+</html>
