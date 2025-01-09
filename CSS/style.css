@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 /* CREACIÓN DE LAS VARIABLES */
 :root{
@@ -53,7 +54,7 @@ header{
     background-position: center;
     background-size: cover;
     gap: 80px;
-    height: 1099px;
+    height: 100vh;
 }
 header h1{
     font-size: 120px;
@@ -72,6 +73,15 @@ nav{
     height: fit-content;
     background: rgba(24, 24, 24, 0.50);
     z-index: 2;
+}
+nav a svg{
+    transition: all ease-in-out .4s;
+}
+nav a svg:hover{
+    width: 150px;
+}
+#cafeteriaLogo{
+    padding-bottom: 10px;
 }
 .contact-button{
     font-size: 20px;
@@ -211,9 +221,24 @@ nav{
     height: 322px;
     font-size: 28px;
     position: relative;
+    border-radius: 10%;
+}
+.cardDrink, .cardDrink h4, .cardDrink img, .cardDrink p{
+    transition: all ease-in-out .4s;
 }
 .cardDrink img{
     border-radius: 25px;
+}
+.cardDrink span{
+    font-weight: bolder;
+}
+.cardDrink p{
+    position: absolute;
+    top: 66px;
+    opacity: 0;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 20px;
 }
 #textDrink1, #textDrink2, #textDrink3, #textDrink4, #textDrink5, #textDrink6{
     background-clip: text;
@@ -246,6 +271,17 @@ nav{
 #textDrink6{
     background: linear-gradient(90deg, #B69129 25%, #16262C 100%);
     background-clip: text;
+}
+/* Ahora para los efectos hover de las cards */
+.cardDrink:hover h4{
+    opacity: 0;
+}
+.cardDrink:hover p{
+    opacity: 1;
+    /* BAJAR EL FONT WEIGHT O AJUSTAR COMO SE VE EN FIGMA Y LA POSICIÓN MAS ABAJO EN EL CENTRO ****************** */
+}
+.cardDrink:hover img{
+    opacity: .5;
 }
 /* FOOD SECTION */
 .food-section{
@@ -424,7 +460,7 @@ nav{
 .pool-section{
     background-image: url(../IMG/pool\ bg.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
     padding: 37px 0px;
@@ -449,6 +485,9 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.card-Pool img{
+    cursor: pointer;
 }
 /* Other zones section */
 .other-zones-section{
@@ -476,7 +515,7 @@ nav{
 }
 /* LOCATION SECTION */
 .location-section{
-    background-image: url(../IMG/location\ bg.jpg);
+    height: 100%;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -485,8 +524,9 @@ nav{
     gap: 40px;
     padding: 40px 0px;
 }
-.location-section img{
-    width: 852px;
+.location-section iframe{
+    height: 700px !important;
+    width: 952px !important;
 }
 /* REVIEWS-SECTION */
 .reviews-section{
@@ -579,6 +619,9 @@ footer svg{
 .finalFooter a img{
     width: 50px;
 }
+#principalLogo{
+    width: initial;
+}
 #btnContact{
     font-family: var(--Fuente-H2-H3-Botones);
     font-size: 15px;
@@ -601,8 +644,9 @@ footer svg{
     .imageLibrary{
         height: 200px;
     }
-    .location-section img{
-        width: 802px;
+    .location-section iframe{
+        height: 500px !important;
+        width: 802px !important;
     }
     .drinks-section{
         padding: 2rem 0rem;
@@ -630,8 +674,9 @@ footer svg{
     .post{
         transform: scale(.8);
     }
-    .location-section img{
-        width: 525px;
+    .location-section iframe{
+        height: 400px !important;
+        width: 525px !important;
     }
     .container-users{
         transform: scale(.9);
@@ -708,8 +753,9 @@ footer svg{
     .post{
         transform: scale(.7);
     }
-    .location-section img{
-        width: 300px;
+    .location-section iframe{
+        height: 250px !important;
+        width: 300px !important;
     }
     .reviews-section{
         gap: 0px;
@@ -773,8 +819,9 @@ footer svg{
     nav{
         gap: 0px;
     }
-    .location-section img{
-        width: 275px;
+    .location-section iframe{
+        height: 200px !important;
+        width: 275px !important;
     }
     .formUsers{
         width: 70%;
