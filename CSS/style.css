@@ -179,29 +179,41 @@ nav a svg:hover{
 /* CAFETERIA SECTION */
 .cafeteria-section{
     background-image: url(../IMG/cafeteria\ section\ bg.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    height: 616px;
-}
-.img-container-cafeteria, .text-container-cafeteria{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 631px;
+    position: relative;
+    overflow: hidden;
 }
-.img-container-cafeteria{
+.coffeContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
-    width: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease-in-out .6s;
 }
-.text-container-cafeteria{
-    height: 100%;
-    width: 50%;
+.coffeContainer.visible{
+    opacity: 1;
+    visibility: visible;
 }
-.text-container-cafeteria p{
+.coffeContainer img{
+    width: 392px;
+    height: 421px;
+}
+.coffeContainer p{
     font-size: 20px;
-    font-weight: 400;
-    width: 601px;
+    letter-spacing: 4.5px;
+    width: 500px;
 }
 /* DRINKS SECTION */
 .drinks-section{
@@ -299,6 +311,7 @@ nav a svg:hover{
     padding: 24px 88px;
     gap: 75px;
     border-radius: 150px;
+    flex-wrap: wrap;
 }
 .food-container p{
     max-width: 320px;
@@ -656,8 +669,12 @@ footer svg{
     }
 }
 @media screen and (max-width: 768px){
-    .img-container-cafeteria img{
-        width: 320px;
+    .coffeContainer{
+        gap: 0px;
+    }
+    .coffeContainer img{
+        width: 372px;
+        height: 391px;
     }
     .cardDrink{
         transform: scale(.8);
@@ -710,12 +727,14 @@ footer svg{
     .members svg{
         display: none;
     }
-    .text-container-cafeteria p{
-        font-size: 14px;
+    .coffeContainer img{
+        width: 322px !important;
+        height: 341px !important;
     }
-    .img-container-cafeteria img{
-        width: 200px;
+    .coffeContainer p{
+        font-size: 15px;
     }
+    .coofe
     .food-container{
         flex-wrap: wrap;
         padding: 30px 0px;
@@ -793,7 +812,7 @@ footer svg{
         transform: scale(.6);
     }
     .food-container{
-        transform: scale(.7);
+        transform: scale(.7 h);
     }
     .books-container{
         transform: scale(.7);
@@ -804,17 +823,18 @@ footer svg{
     .info-container, .info-container2{
         font-size: 10px;
     }
-    .text-container-cafeteria p{
-        font-size: 11px;
-    }
-    .img-container-cafeteria img{
-        width: 150px;
-    }
     .cardDrink{
         transform: scale(.6);
     }
     .container-users{
         transform: scale(.8);
+    }
+    .coffeContainer img{
+        width: 232px !important;
+        height: 261px !important;
+    }
+    .coffeContainer p{
+        font-size: 13px;
     }
     nav{
         gap: 0px;

@@ -13,4 +13,19 @@ class Metodos{
             formulario.reset();
         }
     }
+    carouselCafeteria(){
+    //Necesito en una constante guardar las variables en modo de arreglo
+    const containersCafes = [coffe1, coffe2, coffe3];
+    //Necesito una variable que va a manejar que se mueva en el arreglo para quitar y poner la clase visible
+    let currentIndex = 0;
+    function cambiarCafe(){
+        //Esta funcion lo que va a hacer es ocultar el contenedor que este en ese momento y pasarle a la posicón del otro para mostrarlo y asi sucesivamente
+        containersCafes[currentIndex].classList.remove('visible');
+        currentIndex = (currentIndex + 1) % containersCafes.length;
+        containersCafes[currentIndex].classList.add('visible');
+    }
+    //Para llamar a la funcion cada 4 segundos
+    setInterval(cambiarCafe, 8000);
+    containersCafes[currentIndex].classList.add('visible')
+    }
 }
