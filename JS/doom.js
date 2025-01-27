@@ -11,8 +11,15 @@ const formulario = document.getElementById('formulario');
 const coffe1 = document.getElementById('coffe1');
 const coffe2 = document.getElementById('coffe2');
 const coffe3 = document.getElementById('coffe3');
+//Ubicar las flechas que van a controlar la interacción en el carousel de group team
+const arrowLeft = document.getElementById('arrowLeft');
+const arrowRight = document.getElementById('arrowRight');
+//Ubicar el carousel que va a cambiar de posición con los clicks
+const carouselGroup = document.getElementById('carouselGroup');
 cargarMetodos();
 function cargarMetodos (){
     btnContact.addEventListener('click', (e) => {metodos.revisarBtnContacto(e)});
     document.addEventListener('DOMContentLoaded', () => {metodos.carouselCafeteria()});
+    arrowLeft.addEventListener('click', (e) =>{metodos.carouselGroupLeft(e)});
+    arrowRight.addEventListener('click', (e) =>{metodos.carouselGroupRight(e)});
 }

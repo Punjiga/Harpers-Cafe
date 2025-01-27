@@ -13,6 +13,13 @@ class Metodos{
             formulario.reset();
         }
     }
+    carouselGroupLeft() {
+        carouselGroup.style.transform= 'translateX(-33.3%)';
+    }
+    
+    carouselGroupRight() {
+        carouselGroup.style.transform = 'translatex(+33.3%)';
+    }
     carouselCafeteria(){
     //Necesito en una constante guardar las variables en modo de arreglo
     const containersCafes = [coffe1, coffe2, coffe3];
@@ -24,7 +31,7 @@ class Metodos{
         currentIndex = (currentIndex + 1) % containersCafes.length;
         containersCafes[currentIndex].classList.add('visible');
     }
-    //Para llamar a la funcion cada 4 segundos
+    //Para llamar a la funcion cada 8 segundos
     setInterval(cambiarCafe, 8000);
     containersCafes[currentIndex].classList.add('visible')
     }
