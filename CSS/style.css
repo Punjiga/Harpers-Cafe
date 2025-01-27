@@ -132,7 +132,9 @@ nav a svg:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 0rem 7rem 0rem;
+    padding: 4rem 0rem;
+    position: relative;
+    overflow: hidden;
 }
 .group-team-section h2{
     margin-bottom: 20px;
@@ -141,37 +143,61 @@ nav a svg:hover{
     font-weight: 800;
     cursor: pointer;
 }
+.group-team-section svg{
+    position: absolute;
+    z-index: 2;
+    top: 350px;
+    cursor: pointer;
+}
+#arrowLeft{
+    left: 10px;
+}
+#arrowRight{
+    right: 10px;
+}
+.carousel{
+    display: flex;
+    width: 300%;
+    transition: all ease-in-out .4s;
+}
 .members{
     display: flex;
     justify-content: space-around;
     width: 100%;
     gap: 33px;
     padding: 60px 0px;
-    position: relative;
     flex-wrap: wrap;
 }
 .card{
     border-radius: 6px;
-    width: 239px;
+    width: 249px;
+    height: 320px;
     background-color: var(--Color-Detalles);
     text-align: start;
     overflow: hidden;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.6);
 }
 .card img{
-    width: 100%;
-    border-radius: 1%;
+    width: fit-content;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 .members p{
     margin-top: 10px;
+    bottom: 25px;
 }
-.members h3, p{
+.members h3, .members p{
     padding: 0px 10px;
     text-transform: capitalize;
+    position: absolute;
 }
 .members h3{
     padding:7px 8px;
     font-weight: 500;
     font-size: 20px;
+    bottom: 40px;
 }
 .texts-members{
     max-height: fit-content;
@@ -685,6 +711,18 @@ footer svg{
     .food-container{
         padding: 17px 70px;
     }
+    .members{
+        transform: scale(.9);
+    }
+    .group-team-section svg{
+        top: 515px;
+    }
+    #arrowLeft{
+        left: 20px;
+    }
+    #arrowRight{
+        right: 20px;
+    }
     .imageLibrary{
         height: 180px;
     }
@@ -720,6 +758,10 @@ footer svg{
     }
     nav a {
         transform: scale(.8);
+    }
+    .group-team-section svg{
+        top: 785px;
+        transform: scale(.9);
     }
     .info-container, .info-container2{
         font-size: 13px;
